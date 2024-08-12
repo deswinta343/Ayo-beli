@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Text atas -->
+<div class="bg-indigo-600 px-4 py-3 text-white">
+    <p class="text-center text-sm font-medium">
+        Website Penyedia Produk
+      <a href="#" class="inline-block underline">Kebutuhan sehari-hari</a>
+    </p>
+  </div>   
+  
+<!-- Navbar -->
+<header class="bg-white">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <div class="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
+        <div>
+          <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">Ayo Beli!</h1>
+  
+          <p class="mt-1.5 text-sm text-gray-500">
+            Hidup mudah dan murah menggunakan website ayo beli dari Toko Shinta!
+          </p>
+        </div>
+  
+        <div class="flex items-center gap-4">
+          <button
+            class="inline-flex items-center justify-center gap-1.5 rounded border border-gray-200 bg-white px-5 py-3 text-gray-900 transition hover:text-gray-700 focus:outline-none focus:ring"
+            type="button"
+          >
+            <span class="text-sm font-medium"> Lihat </span>
+  
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+          </button>
+  
+          <button
+            class="inline-block rounded bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
+            type="button"
+          >
+            Create Post
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- home -->
+
+<!--
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+
+<section class="bg-gray-50">
+    <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+      <div class="mx-auto max-w-lg text-center">
+        <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+          Sekarang sudah gak jaman belanja jalan kaki!
+        </h2>
+  
+        <p class="hidden text-gray-500 sm:mt-4 sm:block">
+          Beli di kami, tinggal nunggu dirumah barang pun diantar, dan bisa bayar dirumah lohh
+        </p>
+      </div>
+  
+      <div class="mx-auto mt-8 max-w-xl">
+        <form action="#" class="sm:flex sm:gap-4">
+          <div class="sm:flex-1">
+            <label for="email" class="sr-only">Email</label>
+  
+            <input
+              type="text"
+              placeholder="Cari barang kebutuhanmu!"
+              class="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-400"
+            />
+          </div>
+  
+          <button
+            type="submit"
+            class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-indigo-600 px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto"
+          >
+            <span class="text-sm font-medium"> Cari Barang </span>
+  
+            <svg
+              class="size-5 rtl:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<!-- Product list -->
+
+<div class="container grid grid-cols-3 gap-4 max-w-xl mx-auto py-8">
+    <a href="#" class="group block">
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D"
+          alt=""
+          class="aspect-square w-full rounded object-cover"
+        />
+      
+        <div class="mt-3">
+          <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
+            Sepatu super
+          </h3>
+      
+          <p class="mt-1 text-sm text-gray-700">Rp. 299.000 </p>
+        </div>
+      </a>
+      <a href="#" class="group block">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1678739395192-bfdd13322d34?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmFnfGVufDB8fDB8fHww"
+          alt=""
+          class="aspect-square w-full rounded object-cover"
+        />
+      
+        <div class="mt-3">
+          <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
+            Tas batman
+          </h3>
+      
+          <p class="mt-1 text-sm text-gray-700">Rp. 499.000 </p>
+        </div>
+      </a>
+      <a href="#" class="group block">
+        <img
+          src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2hpcnR8ZW58MHx8MHx8fDA%3D"
+          alt=""
+          class="aspect-square w-full rounded object-cover"
+        />
+      
+        <div class="mt-3">
+          <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
+            Kaos Lucas
+          </h3>
+      
+          <p class="mt-1 text-sm text-gray-700">Rp. 999.000 </p>
+        </div>
+      </a>
+</div>
+
+<a href="#" class="group relative block overflow-hidden">
+    <button
+      class="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
+    >
+      <span class="sr-only">Wishlist</span>
+  
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-4 w-4"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+        />
+      </svg>
+    </button>
+  
+    <img
+      src="https://images.unsplash.com/photo-1599481238640-4c1288750d7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80"
+      alt=""
+      class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+    />
+  
+    <div class="relative border border-gray-100 bg-white p-6">
+      <span class="whitespace-nowrap bg-yellow-400 px-3 py-1.5 text-xs font-medium"> New </span>
+  
+      <h3 class="mt-4 text-lg font-medium text-gray-900">Robot Toy</h3>
+  
+      <p class="mt-1.5 text-sm text-gray-700">$14.99</p>
+  
+      <form class="mt-4">
+        <button
+          class="block w-full rounded bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105"
+        >
+          Add to Cart
+        </button>
+      </form>
+    </div>
+  </a>
+
+<!-- Footer -->
+
+</body>
+</html>
